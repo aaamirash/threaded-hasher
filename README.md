@@ -12,3 +12,14 @@ Usage
 ./thread_crypt [file1 file2 ...]
 ```
 
+Design Overview:
+Files are added to a thread-safe queue.
+
+A fixed number of worker threads pull from the queue and compute hashes.
+
+Each thread reads file contents and hashes them using the crypt() function.
+
+Results are printed in the format:
+```
+[thread_id] filename -> hash
+```
