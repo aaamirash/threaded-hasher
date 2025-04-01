@@ -2,7 +2,7 @@
 
 thread_crypt is a multithreaded file hashing tool written in C. It securely computes cryptographic hashes (e.g., SHA-512) for files using POSIX threads to parallelize the workload. The goal is to efficiently hash large numbers of files by distributing work across multiple threads.
 
-Build Instructions
+## Build Instructions
 ```
 make
 ```
